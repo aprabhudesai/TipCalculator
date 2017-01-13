@@ -1,0 +1,338 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE4B668E1E26C22C0075C8FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4B668D1E26C22C0075C8FF /* main.m */; };
+		BE4B66911E26C22C0075C8FF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4B66901E26C22C0075C8FF /* AppDelegate.m */; };
+		BE4B66941E26C22C0075C8FF /* TipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4B66931E26C22C0075C8FF /* TipViewController.m */; };
+		BE4B66971E26C22C0075C8FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4B66951E26C22C0075C8FF /* Main.storyboard */; };
+		BE4B66991E26C22C0075C8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE4B66981E26C22C0075C8FF /* Assets.xcassets */; };
+		BE4B669C1E26C22C0075C8FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE4B669A1E26C22C0075C8FF /* LaunchScreen.storyboard */; };
+		BE4B66A51E2742EB0075C8FF /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4B66A41E2742EB0075C8FF /* SettingsViewController.m */; };
+		BE5000011E2809EB00D2E26A /* Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5000001E2809EB00D2E26A /* Utilities.m */; };
+		BE5000041E280BBA00D2E26A /* Currency.m in Sources */ = {isa = PBXBuildFile; fileRef = BE5000031E280BBA00D2E26A /* Currency.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BE4B66891E26C22C0075C8FF /* TipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE4B668D1E26C22C0075C8FF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BE4B668F1E26C22C0075C8FF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BE4B66901E26C22C0075C8FF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BE4B66921E26C22C0075C8FF /* TipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TipViewController.h; sourceTree = "<group>"; };
+		BE4B66931E26C22C0075C8FF /* TipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TipViewController.m; sourceTree = "<group>"; };
+		BE4B66961E26C22C0075C8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE4B66981E26C22C0075C8FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE4B669B1E26C22C0075C8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE4B669D1E26C22C0075C8FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE4B66A31E2742EB0075C8FF /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		BE4B66A41E2742EB0075C8FF /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		BE5000001E2809EB00D2E26A /* Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utilities.m; path = ../Utilities.m; sourceTree = "<group>"; };
+		BE5000021E280BBA00D2E26A /* Currency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Currency.h; sourceTree = "<group>"; };
+		BE5000031E280BBA00D2E26A /* Currency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Currency.m; sourceTree = "<group>"; };
+		BE50FFFF1E2809EB00D2E26A /* Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Utilities.h; path = ../Utilities.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE4B66861E26C22C0075C8FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BE4B66801E26C22C0075C8FF = {
+			isa = PBXGroup;
+			children = (
+				BE4B668B1E26C22C0075C8FF /* TipCalculator */,
+				BE4B668A1E26C22C0075C8FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BE4B668A1E26C22C0075C8FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE4B66891E26C22C0075C8FF /* TipCalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE4B668B1E26C22C0075C8FF /* TipCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				BE50FFFF1E2809EB00D2E26A /* Utilities.h */,
+				BE5000001E2809EB00D2E26A /* Utilities.m */,
+				BE5000021E280BBA00D2E26A /* Currency.h */,
+				BE5000031E280BBA00D2E26A /* Currency.m */,
+				BE4B668F1E26C22C0075C8FF /* AppDelegate.h */,
+				BE4B66901E26C22C0075C8FF /* AppDelegate.m */,
+				BE4B66921E26C22C0075C8FF /* TipViewController.h */,
+				BE4B66931E26C22C0075C8FF /* TipViewController.m */,
+				BE4B66A31E2742EB0075C8FF /* SettingsViewController.h */,
+				BE4B66A41E2742EB0075C8FF /* SettingsViewController.m */,
+				BE4B66951E26C22C0075C8FF /* Main.storyboard */,
+				BE4B66981E26C22C0075C8FF /* Assets.xcassets */,
+				BE4B669A1E26C22C0075C8FF /* LaunchScreen.storyboard */,
+				BE4B669D1E26C22C0075C8FF /* Info.plist */,
+				BE4B668C1E26C22C0075C8FF /* Supporting Files */,
+			);
+			path = TipCalculator;
+			sourceTree = "<group>";
+		};
+		BE4B668C1E26C22C0075C8FF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE4B668D1E26C22C0075C8FF /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE4B66881E26C22C0075C8FF /* TipCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE4B66A01E26C22C0075C8FF /* Build configuration list for PBXNativeTarget "TipCalculator" */;
+			buildPhases = (
+				BE4B66851E26C22C0075C8FF /* Sources */,
+				BE4B66861E26C22C0075C8FF /* Frameworks */,
+				BE4B66871E26C22C0075C8FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TipCalculator;
+			productName = TipCalculator;
+			productReference = BE4B66891E26C22C0075C8FF /* TipCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE4B66811E26C22C0075C8FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Abhishek Prabhudesai";
+				TargetAttributes = {
+					BE4B66881E26C22C0075C8FF = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = L8BF78RF63;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BE4B66841E26C22C0075C8FF /* Build configuration list for PBXProject "TipCalculator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE4B66801E26C22C0075C8FF;
+			productRefGroup = BE4B668A1E26C22C0075C8FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE4B66881E26C22C0075C8FF /* TipCalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE4B66871E26C22C0075C8FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4B669C1E26C22C0075C8FF /* LaunchScreen.storyboard in Resources */,
+				BE4B66991E26C22C0075C8FF /* Assets.xcassets in Resources */,
+				BE4B66971E26C22C0075C8FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE4B66851E26C22C0075C8FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE4B66941E26C22C0075C8FF /* TipViewController.m in Sources */,
+				BE4B66911E26C22C0075C8FF /* AppDelegate.m in Sources */,
+				BE5000041E280BBA00D2E26A /* Currency.m in Sources */,
+				BE4B668E1E26C22C0075C8FF /* main.m in Sources */,
+				BE4B66A51E2742EB0075C8FF /* SettingsViewController.m in Sources */,
+				BE5000011E2809EB00D2E26A /* Utilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BE4B66951E26C22C0075C8FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE4B66961E26C22C0075C8FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE4B669A1E26C22C0075C8FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE4B669B1E26C22C0075C8FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE4B669E1E26C22C0075C8FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE4B669F1E26C22C0075C8FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE4B66A11E26C22C0075C8FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L8BF78RF63;
+				INFOPLIST_FILE = TipCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.starminds.TipCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BE4B66A21E26C22C0075C8FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L8BF78RF63;
+				INFOPLIST_FILE = TipCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.starminds.TipCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE4B66841E26C22C0075C8FF /* Build configuration list for PBXProject "TipCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4B669E1E26C22C0075C8FF /* Debug */,
+				BE4B669F1E26C22C0075C8FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE4B66A01E26C22C0075C8FF /* Build configuration list for PBXNativeTarget "TipCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE4B66A11E26C22C0075C8FF /* Debug */,
+				BE4B66A21E26C22C0075C8FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BE4B66811E26C22C0075C8FF /* Project object */;
+}
