@@ -16,6 +16,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *currencyTextField;
 @property (weak, nonatomic) UIPickerView *currencyPicker;
 @property (weak, nonatomic) IBOutlet UISwitch *customTipSwitch;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *defaultTipPercentageSelector;
 
 @end
 
@@ -39,6 +40,9 @@
 
   BOOL customTipSwitchEnabled = [defaults boolForKey:@"enableCustomTip"];
   [_customTipSwitch setOn:customTipSwitchEnabled];
+  
+  int defaultTipIndex = (int) [defaults integerForKey: @"defaultTipIndex"];
+  [self.defaultTipPercentageSelector setSelectedSegmentIndex:defaultTipIndex];
 
   CGFloat ht = 200.0;
   UIPickerView *currencyPicker = [[UIPickerView alloc] initWithFrame:CGRectMake(0, [[UIScreen mainScreen] bounds].size.height - ht, [[UIScreen mainScreen] bounds].size.width, 200)];
@@ -131,6 +135,10 @@
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
   BOOL enableCustomTip = [_customTipSwitch isOn];
   [defaults setBool:enableCustomTip forKey:@"enableCustomTip"];
+
+  int defaultTipIndex = (int) self.defaultTipPercentageSelector.selectedSegmentIndex;
+  [defaults setInteger:defaultTipIndex forKey:@"defaultTipIndex"];
+  
   [defaults synchronize];
 }
 

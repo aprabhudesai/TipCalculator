@@ -15,10 +15,10 @@ static NSArray *currencyArray;
 @implementation Utilities 
 
 + (void) initCurrencyDictionary {
-  Currency *USD = [Currency initWithTitle:@"USD" andSymbol:@"$"];
-  Currency *INR = [Currency initWithTitle:@"INR" andSymbol:@"Rs"];
-  Currency *EURO = [Currency initWithTitle:@"EURO" andSymbol:@"€"];
-  Currency *YUAN = [Currency initWithTitle:@"YUAN" andSymbol:@"¥"];
+  Currency *USD = [Currency initWithTitle:@"USD" andSymbol:@"$" andLocale:@"en_US"];
+  Currency *INR = [Currency initWithTitle:@"INR" andSymbol:@"Rs" andLocale:@"en_IN"];
+  Currency *EURO = [Currency initWithTitle:@"EURO" andSymbol:@"€" andLocale:@"en"];
+  Currency *YUAN = [Currency initWithTitle:@"YUAN" andSymbol:@"¥" andLocale:@"zh"];
   
   currencyArray = [[NSArray alloc] initWithObjects:USD, INR, EURO, YUAN, nil];
 }

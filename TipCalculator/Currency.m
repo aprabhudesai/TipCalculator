@@ -11,10 +11,11 @@
 
 @implementation Currency
 
-+ (id) initWithTitle:(NSString *)title andSymbol:(NSString *)symbol {
++ (id) initWithTitle:(NSString *)title andSymbol:(NSString *)symbol andLocale:(NSString *)localeString {
   Currency *currency = [[self alloc] init];
   [currency setTitle: title];
   [currency setSymbol: symbol];
+  [currency setLocale: [NSLocale localeWithLocaleIdentifier: localeString]];
   
   return currency;
 }

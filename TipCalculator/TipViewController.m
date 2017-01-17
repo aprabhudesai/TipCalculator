@@ -30,7 +30,13 @@
   _customTipLabel.hidden = YES;
   _customTipTextField.hidden = YES;
   _percentageLabel.hidden = YES;
-
+  
+  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+  int defaultTipIndex = (int) [defaults integerForKey:@"defaultTipIndex"];
+  [self.tipControl setSelectedSegmentIndex:defaultTipIndex];
+  
+  [self.billTextField becomeFirstResponder];
+  
   [Utilities initCurrencyDictionary];
   self.title = @"Tip Calculator";
   [self updateValues];
@@ -64,7 +70,7 @@
   NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
   NSInteger currencySetting = [defaults integerForKey:@"currencyIndex"];
   BOOL enableCustomTip = [defaults boolForKey:@"enableCustomTip"];
-  
+
   _customTipLabel.hidden = enableCustomTip ? NO : YES;
   _customTipTextField.hidden = enableCustomTip ? NO : YES;
   _percentageLabel.hidden = enableCustomTip ? NO : YES;
@@ -97,7 +103,6 @@
   else {
     tip = [tipValues[self.tipControl.selectedSegmentIndex] floatValue];
   }
-
   float tipAmount = tip * billAmount;
   float totalAmount = billAmount + tipAmount;
   
@@ -110,7 +115,15 @@
   totalAmountAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
   [self.totalLabel.layer addAnimation:totalAmountAnimation forKey:@"changeTextTransition"];
   
-  self.totalLabel.text = [NSString stringWithFormat:@"%@ %0.2f", selectedCurrency.symbol, totalAmount];
+  NSNumberFormatter *numFormatter = [[NSNumberFormatter alloc] init];
+  [numFormatter setLocale: selectedCurrency.locale];
+  [numFormatter setDecimalSeparator:@"."];
+  [numFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+  [numFormatter setMaximumFractionDigits:2];
+  
+  NSString *totalAmountString = [numFormatter stringFromNumber: [NSNumber numberWithFloat:totalAmount]];
+  
+  self.totalLabel.text = [NSString stringWithFormat:@"%@ %@", selectedCurrency.symbol, totalAmountString];
 }
 
 - (IBAction)onValueChange:(UISegmentedControl *)sender {
@@ -118,6 +131,10 @@
 }
 
 - (IBAction) unwindToHomeScreen:(UIStoryboardSegue *) segue {
+  NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+  int defaultTipIndex = (int) [defaults integerForKey:@"defaultTipIndex"];
+  [self.tipControl setSelectedSegmentIndex:defaultTipIndex];
+  
   [self updateValues];
 }
 

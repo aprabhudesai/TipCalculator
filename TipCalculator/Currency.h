@@ -12,7 +12,8 @@
 
 @property NSString *title;
 @property NSString *symbol;
+@property NSLocale *locale;
 
-+ (id) initWithTitle: (NSString *) title andSymbol: (NSString *) symbol;
++ (id) initWithTitle: (NSString *) title andSymbol: (NSString *) symbol andLocale: (NSString *) localeString;
 
 @end
